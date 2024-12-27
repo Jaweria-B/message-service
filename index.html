@@ -40,7 +40,7 @@
 
         function getMessages(message) {
             $.get('http://localhost:3000/messages', (data) => {
-                data.array.forEach(addMessages);
+                data.forEach(addMessages);
             })
         }
 
